@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from llama_index.embeddings.openai import OpenAIEmbedding, OpenAIEmbeddingModelType
 from llama_index.llms.openai import OpenAI
+import os
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 embed_model = OpenAIEmbedding(
